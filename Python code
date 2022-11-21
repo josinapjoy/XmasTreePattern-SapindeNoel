@@ -1,0 +1,37 @@
+width = int(input("Enter the Tree Width  \U0001F332 :"))
+height = int(input("Enter the Tree Height \U0001F332 :"))
+
+space = width * height
+n = 1
+
+print(("-------------------\U0001F332 \U0001F332 \U0001F332-------------------").center(60))
+x = 1
+
+while(x <= height):
+    i = n
+    while(i <= width):
+        j = space
+        while(j >= i):
+            print(end = ' ')
+            j = j - 1
+        k = 1
+        while(k <= i):
+            print('\U0001F7E2', end = '')
+            k = k + 1
+        print()
+        i = i + 1
+    n = n + 2
+    width = width + 2
+    x = x + 1
+i = 1
+while(i < height):
+    j = space - 4
+    while(j >= 0):
+        print(end = ' ')
+        j = j - 1
+    k = 1
+    while(k < height):
+        print('\U0001F7E4', end ='')
+        k = k + 1
+    print()
+    i = i + 1
